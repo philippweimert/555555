@@ -1,0 +1,7 @@
+fastapi==0.110.1
+uvicorn==0.25.0
+pydantic>=2.6.4
+email-validator>=2.2.0
+aiosmtplib>=3.0.0
+python-multipart>=0.0.9
+gunicorn==22.0.0
