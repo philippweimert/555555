@@ -105,8 +105,8 @@ logger = logging.getLogger(__name__)
 app.include_router(api_router)
 
 # Serve frontend
-app.mount("/static", StaticFiles(directory="../frontend/build/static"), name="static")
+app.mount("/static", StaticFiles(directory="frontend/build/static"), name="static")
 
 @app.get("/{full_path:path}")
 async def serve_frontend(full_path: str):
-    return FileResponse("../frontend/build/index.html")
+    return FileResponse("frontend/build/index.html")
